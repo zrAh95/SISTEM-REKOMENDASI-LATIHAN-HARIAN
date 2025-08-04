@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sistem Pakar Gym</title>
+</head>
+<body>
+    <header>
+        <h1>Rekomendasi Latihan Gym</h1>
+    </header>
+    <main>
+        <form id="form-rekomendasi" action="rekomendasi.php" method="POST">
+            <label for="usia">Usia:</label>
+            <input type="number" id="usia" name="usia" required>
+            
+            <label for="tingkat_kebugaran">Tingkat Kebugaran:</label>
+            <select id="tingkat_kebugaran" name="tingkat_kebugaran" required>
+                <option value="Pemula">Pemula</option>
+                <option value="Menengah">Menengah</option>
+                <option value="Lanjutan">Lanjutan</option>
+            </select>
+            
+            <label for="tujuan">Tujuan Latihan:</label>
+            <select id="tujuan" name="tujuan" required>
+                <option value="Penurunan Berat Badan">Penurunan Berat Badan</option>
+                <option value="Pembentukan Otot">Pembentukan Otot</option>
+                <option value="Kebugaran Umum">Kebugaran Umum</option>
+            </select>
+            
+            <button type="submit">Dapatkan Rekomendasi</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Sistem Pakar Gym</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
